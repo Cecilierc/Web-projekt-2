@@ -1,0 +1,300 @@
+/* HTML and body styling */
+html,
+body {
+    font-size: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F5F2EF;
+    height: 100%;
+}
+
+
+/*-----------------------------Navigationsbaren----------------------------*/
+/*selve baren*/
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    /* Placerer logoet til venstre og links til højre */
+    align-items: center;
+    padding: 10px 20px;
+    /* Mindre padding for at undgå for meget højde */
+    background-color: #F5F2EF;
+    overflow: hidden;
+    /* Forhindrer baren i at blive for stor */
+}
+
+/*juster links-container*/
+.nav-links {
+    display: flex;
+    gap: 15px;
+    /* Mellemrum mellem links */
+}
+
+/*justér logo i nav-baren*/
+.nav_logo {
+    width: 120px;
+    /* Mindre bredde for at gøre det mere kompakt */
+    height: auto;
+    padding: 2px;
+}
+
+/*navigation links*/
+.topnav a {
+    text-decoration: none;
+    color: #000;
+    /* Justér farven på tekst */
+    font-size: 15px;
+    font-weight: 100;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+/*hover-effekt, når du tager musen over*/
+.topnav a:hover {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+/* ----------------------------Forside billede------------------------- */
+.forside_billede_container {
+    height: 100%;
+    overflow: hidden;
+    /* Sikrer, at buede kanter vises korrekt */
+    display: inline-block;
+    /* Holder containerens størrelse efter billedet */
+    margin: 0 auto;
+    /* Centrerer containeren */
+}
+
+.forside_billede {
+    max-width: 70%;
+    height: auto;
+    border-top-right-radius: 10px;
+    /* Øverste højre hjørne */
+    border-bottom-right-radius: 10px;
+    /* Nederste højre hjørne */
+    margin-top: 5%;
+}
+
+.text_overlay {
+    position: absolute;
+    /* Positionerer teksten oven på billedet */
+    top: 20%;
+    /* Justér denne værdi for at flytte teksten op/ned */
+    right: 0;
+    /* Justerer teksten til højre */
+    transform: translateY(-20%);
+    /* Flytter teksten lidt op for bedre positionering */
+    color: rgb(3, 3, 3);
+    /* Justér tekstfarven for bedre kontrast */
+    text-align: right;
+    /* Højrejusterer teksten */
+    z-index: 1;
+    /* Sørger for, at teksten er ovenpå billedet */
+    padding: 10px;
+    /* Lidt padding for at give plads omkring teksten */
+}
+
+/* grå ramme om billedet*/
+.ramme {
+    position: absolute;
+    /* Placerer boksen i containeren */
+    height: 95%;
+    top: 15%;
+    /* Justerer til toppen */
+    left: 0;
+    /* Justerer til venstre */
+    right: 27%;
+    /* Justerer til højre */
+    bottom: 1%;
+    /* Justerer til bunden */
+    background-color: rgba(156, 155, 155, 0.5);
+    /* Grå med lidt gennemsigtighed */
+    border-radius: 10px;
+    /* Runde hjørner på boksen */
+    z-index: -1;
+    /* Sikrer, at boksen er bagved billedet */
+}
+
+
+/* --------------------------Tekst ved forsidebillede--------------------*/
+.overskrift_forside {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20%;
+    margin-bottom: 2%;
+    padding-top: 5%;
+    font-family: Lato;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 450%;
+}
+
+.overskrift2_forside {
+    display: flex;
+    justify-content: flex-end;
+    margin: 2%;
+    padding-top: 0;
+    font-family: Lato;
+    font-weight: 100;
+}
+
+.velkomst {
+    display: flex;
+    justify-content: flex-end;
+    margin: 2%;
+    margin-top: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: unset;
+    font-weight: 100;
+    color: rgb(111, 109, 109);
+}
+
+
+/*--------------------------------Om mig---------------------------------*/
+/*overskrift*/
+.ommig_overskrift {
+    font-family: Lato;
+    font-size: 250%;
+
+}
+
+/*brødtekst*/
+.ommig {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+/* boksen der fylder det hele*/
+.forside_section {
+    padding-top: 5%;
+    display: flex;
+    height: 600px;
+    padding-bottom: 4%;
+}
+
+/*boksen til venstre - teksen*/
+.kol_tekst_forside {
+    flex: 1;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+}
+
+
+/*boksen til højre - billede*/
+.kol_billede_forside {
+    flex: 1;
+    padding-right: 5%;
+}
+
+/*størrelse på billedet*/
+.ommig_billede {
+    width: 85%;
+    max-height: 105%;
+    object-fit: cover;
+    border-radius: 200%;
+    padding-top: 15%;
+    padding-top: 10%;
+}
+
+.liste {
+    font-family: arial;
+    font-size: 16px;
+}
+
+
+/* ----------------------------Footer------------------------ */
+.site_footer {
+    background-color: #DEDAD5;
+    /* Grå baggrund */
+    padding: 20px 0;
+    /* Lidt padding for at give plads */
+    color: #000;
+    /* Sort tekstfarve */
+    width: 100%;
+    /* Strækker footeren over hele sidens bredde */
+}
+
+/* --- Container for footeren ---- */
+.footer_container {
+    display: flex;
+    /* Brug flexbox til at arrangere elementer i rækken */
+    justify-content: space-between;
+    /* Lige plads mellem elementerne */
+    align-items: center;
+    /* Centrerer elementerne vertikalt */
+    padding: 0 5%;
+    /* Indrykker til venstre og højre */
+}
+
+/* --- Billedet i footeren ---- */
+.footer_billede img {
+    width: 50%;
+    /* Juster størrelsen efter behov */
+    height: auto;
+    border-radius: 5px;
+    /* Runde hjørner */
+    margin-left: 5%;
+}
+
+/* --- Tekstkolonnerne --- */
+.footer_text_columns {
+    display: flex;
+    width: 90%;
+    /* Juster bredden, så tekstkolonnerne ikke fylder for meget */
+    justify-content: space-between;
+    /* Fordel plads mellem kolonnerne */
+}
+
+.footer-column {
+    width: 30%;
+    /* Sørger for, at hver kolonne fylder en tredjedel af pladsen */
+    padding: 0 10px;
+    /* Tilføjer lidt padding mellem kolonnerne */
+    text-decoration: none;
+    color: #000;
+    /* Justér farven på tekst */
+}
+
+.footer-column h3 {
+    font-size: 1.2em;
+    /* Større skrifttype til overskrifter */
+    margin-bottom: 5%;
+    font-family: Lato;
+}
+
+.footer-column p {
+    font-size: 13px;
+    /* Mindre skrifttype til tekstindhold */
+    margin: 0;
+    font-family: Lato;
+}
+
+/* ---- Fjern standard styling fra links i footeren ---- */
+.footer-column a {
+    text-decoration: none;
+    /* Fjern understregning */
+    color: #000;
+    /* Sort tekstfarve som resten af teksten */
+    font-size: 13px;
+    /* Samme skrifttype størrelse som <p> */
+    font-family: Lato;
+    /* Sørg for at bruge samme skrifttype */
+}
+
+/* --- Hover-effekt (streg under, når musen kommer over, hvis ønsket --- */
+.footer-column a:hover {
+    text-decoration: underline;
+    /* Tilføj en understregning ved hover, hvis ønsket */
+}
+
+.socialemedier_billeder {
+    width: 50%;
+}

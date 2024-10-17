@@ -1,0 +1,807 @@
+/* HTML and body styling */
+html,
+body {
+    font-size: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F5F2EF;
+    height: 100%;
+}
+
+
+
+
+/*-----------------------------Navigation--------------------------*/
+.topnav {
+    position: absolute;
+    /* Hold positionen relativ, så den ikke overlapper billedet */
+    z-index: 100;
+    /* Sørg for, at navigationen altid er over andre elementer */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* Placerer logoet til venstre og links til højre */
+    align-items: center;
+
+}
+
+/*juster links-container*/
+.nav-links {
+    display: flex;
+    gap: 15px;
+    /* Mellemrum mellem links */
+    margin-right: 40px;
+    z-index: 10;
+}
+
+/*justér logo i nav-baren*/
+.nav_logo {
+    width: 120px;
+    /* Mindre bredde for at gøre det mere kompakt */
+    height: auto;
+    padding: 2px;
+    z-index: 10;
+}
+
+/*navigation links*/
+.topnav a {
+    text-decoration: none;
+    color: #ffffff;
+    /* Justér farven på tekst */
+    font-size: 15px;
+    font-weight: 100;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+/*navigation links sort*/
+.topnav-akt a {
+    text-decoration: none;
+    color: #000000;
+    /* Justér farven på tekst */
+    font-size: 15px;
+    font-weight: 100;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+/*hover-effekt, når du tager musen over*/
+.topnav a:hover {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+/* ----------------------Start billede og tekst ----------------------- */
+/*forsidebillede*/
+.forsidebillede {
+    display: block;
+    /* Sikrer, at billedet vises som et blok-element */
+    margin-top: 0;
+    /* Lidt mellemrum fra navigationen, hvis nødvendigt */
+    width: 100%;
+    height: 98%;
+    /* Gør, at billedet holder sin proportion */
+    z-index: -10;
+}
+
+/*tekst på billedet*/
+.text_overlay {
+    position: absolute;
+    /* Positionerer teksten oven på billedet */
+    top: 50%;
+    /* Justér denne værdi for at flytte teksten op/ned */
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    /* Flytter teksten, så den er præcis i midten */
+    color: rgb(255, 255, 255);
+    /* Justér tekstfarven for bedre kontrast */
+    text-align: center;
+    /* Højrejusterer teksten */
+    z-index: 1;
+    /* Sørger for, at teksten er ovenpå billedet */
+    padding: 10px;
+    /* Lidt padding for at give plads omkring teksten */
+}
+
+/*overskrift*/
+.overskrift_forside {
+    display: flex;
+    justify-content: center;
+    margin-top: 20%;
+    margin: 5PX;
+    padding-top: 5%;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 800%;
+}
+
+/*overskrift 2*/
+.overskrift2_forside {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding-top: 0;
+    font-family: Lato;
+    font-weight: 300;
+    font-size: 150%
+}
+
+
+
+
+
+/*-----------------------------Artikel 1, 3 og 4-------------------*/
+/*overskrift*/
+.vietnam_venstre_overskrift {
+    font-family: Lato;
+    font-size: 170%;
+}
+
+/*brødteksten*/
+.tekst_venstre {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*boksen der fylder det hele*/
+.section1 {
+    padding-top: 5%;
+    display: flex;
+    height: 336px;
+    padding-bottom: 4%;
+}
+
+/*boksen til venstre - teksen*/
+.kol_tekst {
+    flex: 1;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+}
+
+/*boksen til højre - billede*/
+.kol_billede {
+    flex: 1;
+    padding-right: 5%;
+}
+
+/*størrelse på billedet*/
+.billede_omvietnam_artikel {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+/*billede og tekst modsat*/
+.section2 {
+    padding-top: 5%;
+    display: flex;
+    height: 336px;
+    padding-bottom: 4%;
+    padding-left: 5%;
+    flex-direction: row-reverse;
+}
+
+.transportformer {
+    padding-left: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 5%;
+}
+
+
+
+
+/*---------------------Aktivitet stratside-------------------------*/
+/*---Navigation---*/
+.topnav-akt {
+    position: absolute;
+    /* Hold positionen relativ, så den ikke overlapper billedet */
+    z-index: 100;
+    /* Sørg for, at navigationen altid er over andre elementer */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* Placerer logoet til venstre og links til højre */
+    align-items: center;
+
+}
+
+.topnav-akt a:hover {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+/*---Overskrift---*/
+.overskrift1_forside_aktiviteter {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin: 5PX;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 800%;
+    color: #000;
+    z-index: 100;
+}
+
+.overskrift2_forside_aktiviteter {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding-top: 0;
+    font-family: Lato;
+    font-weight: 300;
+    font-size: 150%;
+    color: #000;
+}
+
+.container-overskrift {
+    display: block;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40%;
+    padding-top: 10%;
+    height: 300px;
+}
+
+/*---"Vælg en by" setup---*/
+/*container til by-billederne + by-overskriften */
+.byer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 0;
+}
+
+/*styling til figurer */
+figure {
+    text-align: center;
+    max-width: 300px;
+    /* Juster bredden efter behov */
+    border-radius: 5px;
+    /* Giver lidt afrunding */
+    transition: transform 0.3s ease;
+    /* Tilføjer en lille effekt ved hover */
+    overflow: hidden;
+    /* Sørger for, at billedet ikke strækker sig ud */
+}
+
+/*når man tager musen over*/
+figure:hover {
+    transform: scale(1.05);
+    /* Gør hele figuren lidt større ved hover */
+}
+
+/*by-overskrift under billederne*/
+figcaption {
+    margin-top: 10px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 180%;
+    color: #000;
+}
+
+/*standard billedstørrelse */
+.byer-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------Ninh Binh-----------------------*/
+/*----båd----*/
+.lille-billede-båd {
+    width: 50%;
+    /* Gør billedet lille */
+    height: auto;
+    position: absolute;
+    /* Overlapper effekt */
+    bottom: -400px;
+    /* Justere position i højden */
+    left: -2%;
+    /* Justere position i bredden */
+    z-index: 2;
+    margin-bottom: 15%;
+}
+
+.stort-billede-båd {
+    width: 100%;
+    height: auto;
+    margin-bottom: -30px;
+    /* Juster for at skabe overlap */
+    z-index: 1;
+    /* Sikrer, at dette billede er øverst */
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.ninh_overskrift-båd {
+    font-family: Lato;
+    font-size: 35px;
+    font-weight: 400;
+    padding-left: 10%;
+}
+
+.ninh_brød-båd {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 16px;
+    padding-left: 10%;
+    align-items: center;
+
+}
+
+/*belligenhed og pris*/
+.båd-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Centrér lodret */
+    align-items: flex-start;
+    /* Justér til højre */
+    padding-left: 350px;
+    /* luft til højre */
+    margin-top: 20px;
+    /* Justér afstand fra afsnittet ovenfor */
+    padding-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* opsætning */
+.activity-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 50px 0;
+    position: relative;
+}
+
+/*---buffalo---*/
+.lille-billede-buf {
+    width: 50%;
+    /* Mindre størrelse på billedet */
+    height: auto;
+    position: absolute;
+    /* Overlapningseffekt */
+    bottom: -400px;
+    /* Juster placering */
+    right: -5%;
+    /* Juster position */
+    z-index: 2;
+    margin-bottom: 15%;
+}
+
+.stort-billede-buf {
+    width: auto;
+    height: 700px;
+    margin-bottom: -30px;
+    /* Juster for at skabe overlap */
+    z-index: 1;
+    /* Sikrer, at dette billede er øverst */
+    margin-right: 10%;
+    margin-top: 10%;
+}
+
+.ninh_overskrift-buf {
+    font-family: Lato;
+    font-size: 35px;
+    font-weight: 400;
+    margin-left: 10%;
+    padding-top: 70px;
+}
+
+.ninh_brød-buf {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 16px;
+    margin-left: 10%;
+    align-items: center;
+
+}
+
+/*belligenhed og pris*/
+.buf-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Centrér lodret */
+    align-items: flex-end;
+    /* Justér til venstre */
+    margin-right: 350px;
+    /* Tilføj lidt plads til højre */
+    margin-top: 10px;
+    /* Juster afstand fra det foregående afsnit */
+    padding-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+}
+
+/* opsætning modsætning */
+.activity-section-2 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 50px 0;
+    position: relative;
+}
+
+/*----dragon----*/
+.lille-billede-dragon {
+    width: 50%;
+    /* Mindre størrelse på billedet */
+    height: auto;
+    position: absolute;
+    /* Overlapningseffekt */
+    bottom: -400px;
+    /* Juster placering */
+    left: 7%;
+    /* Juster position */
+    z-index: 2;
+    margin-bottom: 100px;
+}
+
+.stort-billede-dragon {
+    width: 100%;
+    height: auto;
+    margin-bottom: -30px;
+    /* Juster for at skabe overlap */
+    z-index: 1;
+    /* Sikrer, at dette billede er øverst */
+    margin-left: -2%;
+    margin-top: 15%;
+}
+
+.ninh_overskrift-dragon {
+    font-family: Lato;
+    font-size: 35px;
+    font-weight: 400;
+    padding-left: 10%;
+    margin-top: 22%;
+}
+
+.ninh_brød-dragon {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 16px;
+    padding-left: 10%;
+    align-items: center;
+
+}
+
+/*belligenhed og pris*/
+.dragon-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Centrér lodret */
+    align-items: flex-start;
+    /* Justér til venstre */
+    padding-left: 420px;
+    /* Tilføj lidt plads til højre */
+    margin-top: 10px;
+    /* Juster afstand fra det foregående afsnit */
+    padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 150px;
+}
+
+/* opsætning */
+.activity-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 50px 0;
+    position: relative;
+}
+
+/*----generel styling----*/
+.image-container {
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+
+/* Styling a tekst ved siden af billede */
+.text-container {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------Spørgsmåls-siden---------------------*/
+/*boksen med tekst*/
+.tekst_spoerg {
+    text-align: center;
+}
+
+/*overskrift*/
+.spoerg_overskrift {
+    font-family: Lato;
+    font-size: 500%;
+    font-weight: 400;
+    padding-top: 7%;
+    margin-bottom: 2%;
+    border-bottom: 2px solid #333;
+    /* Tilføjer en streg under teksten */
+    display: inline-block;
+    /* Sørger for, at stregen kun går under teksten */
+}
+
+/*brødteksten*/
+.spoerg_tekst {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 160%;
+    padding-top: 2%;
+}
+
+/*--------------Spørgsmålsboksen------------*/
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #9CABBF;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/*ændre knapfarve, når musen kommer over*/
+input[type=submit]:hover {
+    background-color: #1287e6;
+}
+
+/*selve boksen*/
+.container {
+    border-radius: 5px;
+    background-color: #D6DECF;
+    border: 849A73 2px;
+    padding: 3%;
+    /* Indre afstand */
+    margin: 5%;
+    /* Ydre afstand */
+}
+
+/*overskrift i boksen*/
+.overskrift2_box {
+    font-family: Lato;
+}
+
+/*tekst i indputboksene*/
+.i_box {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+/*---------Tidligere spørgsmål--------*/
+.spoergsmaals_boks {
+    background-color: #fff;
+    /* Hvid baggrund */
+    border: 1px solid #ccc;
+    /* Lys grå kant */
+    border-radius: 8px;
+    /* Runde hjørner */
+    padding: 20px;
+    /* Indre afstand */
+    margin-left: 5%;
+    /* Ydre afstand - justeret for mere luft */
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/* Stil for overskriften i boksen */
+.spoergsmaals_overskrift {
+    font-family: Arial, Helvetica, sans-serif, ;
+    font-size: 1.5em;
+    font-weight: lighter;
+    margin-bottom: 10px;
+    color: #000000;
+    font-style: italic;
+}
+
+/* Stil for indholdet i boksen */
+.spoergsmaals_tekst {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 1em;
+    line-height: 1.5;
+    color: #000000;
+}
+
+/*hvem er spørgsmålet fra*/
+.spoerg_fra {
+    margin-top: 0;
+    color: #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------Budget siden----------------*/
+/*boksen med tekst*/
+.tekst_budget {
+    text-align: left;
+    padding-left: 10%;
+}
+
+/*overskrift*/
+.budget_overskrift {
+    font-family: Lato;
+    font-size: 350%;
+    font-weight: 400;
+    padding-top: 7%;
+    margin-bottom: 2%;
+}
+
+/*brødteksten*/
+.budget_tekst {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 150%;
+    padding-top: 2%;
+}
+
+/*budget skema*/
+.budget_billede {
+    padding-left: 9%;
+    height: 600px;
+    width: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------Footer------------------- */
+.site_footer {
+    background-color: #DEDAD5;
+    /* Grå baggrund */
+    padding: 20px 0;
+    /* Lidt padding for at give plads */
+    color: #000;
+    /* Sort tekstfarve */
+    width: 100%;
+    /* Strækker footeren over hele sidens bredde */
+}
+
+/*container for footeren*/
+.footer_container {
+    display: flex;
+    /* Brug flexbox til at arrangere elementer i rækken */
+    justify-content: space-between;
+    /* Lige plads mellem elementerne */
+    align-items: center;
+    /* Centrerer elementerne vertikalt */
+    padding: 0 5%;
+    /* Indrykker til venstre og højre */
+}
+
+/*billedet i footeren*/
+.footer_billede {
+    width: 50%;
+    /* Juster størrelsen efter behov */
+    height: auto;
+    border-radius: 5px;
+    /* Runde hjørner */
+    margin-left: 5%;
+}
+
+/*tekstkolonnerne*/
+.footer_text_columns {
+    display: flex;
+    width: 90%;
+    /* Juster bredden, så tekstkolonnerne ikke fylder for meget */
+    justify-content: space-between;
+    /* Fordel plads mellem kolonnerne */
+}
+
+/*kollonnernes fordeling*/
+.footer-column {
+    width: 30%;
+    /* Sørger for, at hver kolonne fylder en tredjedel af pladsen */
+    padding: 0 10px;
+    /* Tilføjer lidt padding mellem kolonnerne */
+    text-decoration: none;
+    color: #000;
+    /* Justér farven på tekst */
+}
+
+/*kollonne overskrift*/
+.footer-column h3 {
+    font-size: 1.2em;
+    /* Større skrifttype til overskrifter */
+    margin-bottom: 5%;
+    font-family: Lato;
+}
+
+/*kollonne brødtekst*/
+.footer-column p {
+    font-size: 13px;
+    /* Mindre skrifttype til tekstindhold */
+    margin: 0;
+    font-family: Lato;
+}
+
+/*fjern standard styling fra links i footeren*/
+.footer-column a {
+    text-decoration: none;
+    /* Fjern understregning */
+    color: #000;
+    /* Sort tekstfarve som resten af teksten */
+    font-size: 13px;
+    /* Samme skrifttype størrelse som <p> */
+    font-family: Lato;
+    /* Sørg for at bruge samme skrifttype */
+}
+
+/*hover-effekt (streg under, når musen kommer over, hvis ønsket*/
+.footer-column a:hover {
+    text-decoration: underline;
+    /* Tilføj en understregning ved hover, hvis ønsket */
+}
+
+/*billeder af sociale medier*/
+.socialemedier_billeder {
+    width: 50%;
+}
